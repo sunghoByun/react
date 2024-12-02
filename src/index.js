@@ -20,6 +20,11 @@ import EventArgs2 from './ch3/EventArgs2';
 import EventPassive from "./ch3/EventPassive";
 import StateTodo from "./ch4/StateTodo";
 import FormBasic from "./ch4/FormBasic";
+import FormYup from "./ch4/FormYup";
+import LazyBasic from "./ch5/LazyBasic";
+import SuspenseSimple from "./ch5/SuspenseSimple";
+import SuspenseResult from "./ch5/SuspenseResult";
+import ProfilerBasic from "./ch5/ProfileBasic";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,8 +43,15 @@ root.render(
     // <EventCompare/>
     // <EventKey/>
     // <EventArgs2/>
-    <FormBasic/>
+    // <FormBasic/>
+    // <FormYup/>
+    // <LazyBasic/>
+    // <SuspenseSimple/>
+    // <SuspenseResult/>
+    <ProfilerBasic/>
 );
+
+
 
 
 // If you want to start measuring performance in your app, pass a function

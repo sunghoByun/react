@@ -9,9 +9,17 @@ export default function FormBasic() {
 
     };
 
-    const {register, handleSubmit, formState: {errors}} = useForm({defaultValues: defaultValues, mode:"onSubmit", reValidateMode: "onSubmit"});
+    const {register, handleSubmit, formState: {errors, isDirty, isValid, isSubmitting}} = useForm({defaultValues: defaultValues});
 
-    const onsubmit = data => console.log(data);
+    const onsubmit = data => {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve();
+                console.log(data);
+            }, 4000);
+
+        });
+    }
     const onerror = err => console.log(err);
 
     return (
@@ -88,7 +96,8 @@ export default function FormBasic() {
                 <div>{errors.memo?.message}</div>
             </div>
             <div>
-                <button type={"submit"}>제출하기</button>
+                <button type={"submit"} disabled={!isDirty || !isValid || isSubmitting}>제출하기</button>
+                {isSubmitting && <div>...제출 중...</div>}
             </div>
         </form>
     );
