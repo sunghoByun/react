@@ -25,6 +25,10 @@ import LazyBasic from "./ch5/LazyBasic";
 import SuspenseSimple from "./ch5/SuspenseSimple";
 import SuspenseResult from "./ch5/SuspenseResult";
 import ProfilerBasic from "./ch5/ProfileBasic";
+import PortalBasic from "./ch5/PortalBasic";
+import ErrorRoot from "./ch5/ErrorRoot";
+import ErrorRetryRoot from "./ch5/ErrorRetryRoot";
+import ErrorEventRoot from "./ch5/ErrorEventRoot";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,8 +52,17 @@ root.render(
     // <LazyBasic/>
     // <SuspenseSimple/>
     // <SuspenseResult/>
-    <ProfilerBasic/>
+    // <ProfilerBasic/>
+    // <>
+    //     <div id={"dialog"}></div>
+    //     <PortalBasic/>
+    // </>
+    // <ErrorRoot/>
+    // <ErrorRetryRoot/>
+    <ErrorEventRoot/>
 );
+
+
 
 
 
