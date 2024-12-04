@@ -29,6 +29,8 @@ import PortalBasic from "./ch5/PortalBasic";
 import ErrorRoot from "./ch5/ErrorRoot";
 import ErrorRetryRoot from "./ch5/ErrorRetryRoot";
 import ErrorEventRoot from "./ch5/ErrorEventRoot";
+import MaterialBasic from "./ch6/MaterialBasic";
+import MaterialDrawer from "./ch6/MaterialDrawer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -59,8 +61,12 @@ root.render(
     // </>
     // <ErrorRoot/>
     // <ErrorRetryRoot/>
-    <ErrorEventRoot/>
+    // <ErrorEventRoot/>
+//     ch6
+    <MaterialDrawer/>
+
 );
+
 
 
 
