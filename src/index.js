@@ -31,6 +31,12 @@ import ErrorRetryRoot from "./ch5/ErrorRetryRoot";
 import ErrorEventRoot from "./ch5/ErrorEventRoot";
 import MaterialBasic from "./ch6/MaterialBasic";
 import MaterialDrawer from "./ch6/MaterialDrawer";
+import MaterialGrid from "./ch6/MaterialGrid";
+
+import {CssBaseline, ThemeProvider} from "@mui/material";
+import theme from "./ch6/theme";
+import MaterialMode from "./ch6/MaterialMode";
+import FormMui from "./ch6/FormMui";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -63,8 +69,13 @@ root.render(
     // <ErrorRetryRoot/>
     // <ErrorEventRoot/>
 //     ch6
-    <MaterialDrawer/>
-
+//     <MaterialDrawer/>
+//     <ThemeProvider theme={theme}>
+//         <CssBaseline/>
+//         <MaterialGrid/>
+//     </ThemeProvider>
+//     <MaterialMode/>
+    <FormMui/>
 );
 
 
