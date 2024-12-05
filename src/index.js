@@ -37,6 +37,7 @@ import {CssBaseline, ThemeProvider} from "@mui/material";
 import theme from "./ch6/theme";
 import MaterialMode from "./ch6/MaterialMode";
 import FormMui from "./ch6/FormMui";
+import QueryPre from "./ch6/QueryPre";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -75,7 +76,8 @@ root.render(
 //         <MaterialGrid/>
 //     </ThemeProvider>
 //     <MaterialMode/>
-    <FormMui/>
+//     <FormMui/>
+    <QueryPre/>
 );
 
 
