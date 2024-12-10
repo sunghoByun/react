@@ -38,6 +38,10 @@ import theme from "./ch6/theme";
 import MaterialMode from "./ch6/MaterialMode";
 import FormMui from "./ch6/FormMui";
 import QueryPre from "./ch6/QueryPre";
+import StateEffect from "./ch6/StateEffect";
+import HookTimer from "./ch6/HookTimer";
+import HookEffect from "./ch7/HookEffect";
+import HookRefNg from "./ch7/HookRefNg";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -77,7 +81,12 @@ root.render(
 //     </ThemeProvider>
 //     <MaterialMode/>
 //     <FormMui/>
-    <QueryPre/>
+//     <QueryPre/>
+
+    // <StateEffect init={0}/>
+    // <HookTimer init={10}/>
+    // <HookEffect init={10}/>
+    <HookRefNg/>
 );
 
 
