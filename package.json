@@ -19,6 +19,7 @@
     "react-error-boundary": "^4.1.2",
     "react-hook-form": "^7.53.2",
     "react-scripts": "5.0.1",
+    "recoil": "^0.7.7",
     "styled-jsx": "^5.1.6",
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"

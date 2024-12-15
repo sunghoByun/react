@@ -42,6 +42,14 @@ import StateEffect from "./ch6/StateEffect";
 import HookTimer from "./ch6/HookTimer";
 import HookEffect from "./ch7/HookEffect";
 import HookRefNg from "./ch7/HookRefNg";
+import HookRefForward from "./ch7/HookRefForward";
+import HookCallbackRef from "./ch7/HookCallbackRef";
+import HookReducerUp from "./ch7/HookReducerUp";
+import HookContext from "./ch7/HookContext";
+import MyThemeProvider from "./ch7/MyThemeProvider";
+import HookThemeButton from "./ch7/HookThemeButton";
+import {RecoilRoot} from "recoil";
+import RecoilTodo from "./ch7/RecoilTodo";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -86,7 +94,12 @@ root.render(
     // <StateEffect init={0}/>
     // <HookTimer init={10}/>
     // <HookEffect init={10}/>
-    <HookRefNg/>
+    // <HookRefNg/>
+    // <HookReducerUp init={3}/>
+    // <HookContext/>
+    <RecoilRoot>
+        <RecoilTodo/>
+    </RecoilRoot>
 );
 
 
