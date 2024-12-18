@@ -38,7 +38,7 @@ import theme from "./ch6/theme";
 import MaterialMode from "./ch6/MaterialMode";
 import FormMui from "./ch6/FormMui";
 import QueryPre from "./ch6/QueryPre";
-import StateEffect from "./ch6/StateEffect";
+import StateEffect from "./ch7/StateEffect";
 import HookTimer from "./ch6/HookTimer";
 import HookEffect from "./ch7/HookEffect";
 import HookRefNg from "./ch7/HookRefNg";
@@ -50,6 +50,9 @@ import MyThemeProvider from "./ch7/MyThemeProvider";
 import HookThemeButton from "./ch7/HookThemeButton";
 import {RecoilRoot} from "recoil";
 import RecoilTodo from "./ch7/RecoilTodo";
+import RecoilTodoUp from "./ch7/RecoilTodoUp";
+import HookMemo from "./ch7/HookMemo";
+import HookTransition from "./ch7/HookTransition";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -97,9 +100,15 @@ root.render(
     // <HookRefNg/>
     // <HookReducerUp init={3}/>
     // <HookContext/>
-    <RecoilRoot>
-        <RecoilTodo/>
-    </RecoilRoot>
+    // <RecoilRoot>
+    //     <RecoilTodo/>
+    // </RecoilRoot>
+    // <StateEffect init={0}/>
+    // <RecoilRoot>RecoilRoot
+    //     <RecoilTodoUp/>
+    // </RecoilRoot>
+    // <HookMemo/>
+    <HookTransition/>
 );
 
 

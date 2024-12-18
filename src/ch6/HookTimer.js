@@ -11,7 +11,7 @@ export default function HookTimer({init}) {
         return () => {
             clearInterval(t);
         }
-    }, []);
+    }, [count]);
 
     return (
         <div className={count < 0 ? 'warn' : ''}>

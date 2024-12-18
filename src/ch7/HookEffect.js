@@ -15,8 +15,10 @@ export default function HookEffect({init}) {
     const [count, setCount] = useState(0);
 
     useLayoutEffect(() => {
-        sleep(2000);
+        console.log('start effect');
+        sleep(5000);
         setCount(init);
+        console.log('end effect');
     }, []);
 
     const handleClick = () => setCount(count + 1);
