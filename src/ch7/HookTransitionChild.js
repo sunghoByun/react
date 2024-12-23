@@ -6,7 +6,9 @@ const sleep = (delay) => {
     while (Date.now - start < delay) ;
 };
 
-export const BookDetails = ({isbn}) =>{
+
+
+export function BookDetails({isbn}) {
     const book = books.find(b => b.isbn === isbn);
     return (
         <ul>
@@ -14,7 +16,7 @@ export const BookDetails = ({isbn}) =>{
             <li>도서명 : {book?.title}</li>
             <li>가격 : {book?.price}원</li>
             <li>개요 : {book?.summary}</li>
-            <li>예제 코드 : {(book?.download)? '있음' : '없음'}</li>
+            <li>예제 코드 : {(book?.download) ? '있음' : '없음'}</li>
         </ul>
     );
 }
@@ -28,7 +30,9 @@ export const CommentList = memo(function({src, isPending}){
     );
 })
 
-const CommentItem = ({src}) => {
-    sleep(1000);
+function CommentItem({src}) {
+    console.log('delay start');
+    sleep(10000);
+    console.log('delay end');
     return <li>{src.body}({src.rank})</li>
 }

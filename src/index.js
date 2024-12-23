@@ -53,6 +53,8 @@ import RecoilTodo from "./ch7/RecoilTodo";
 import RecoilTodoUp from "./ch7/RecoilTodoUp";
 import HookMemo from "./ch7/HookMemo";
 import HookTransition from "./ch7/HookTransition";
+import HookDefered from "./ch7/HookDeferred";
+import HookCustom from "./ch7/HookCustom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -108,7 +110,9 @@ root.render(
     //     <RecoilTodoUp/>
     // </RecoilRoot>
     // <HookMemo/>
-    <HookTransition/>
+    // <HookTransition/>
+    // <HookDefered/>
+    <HookCustom/>
 );
 
 
