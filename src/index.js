@@ -55,6 +55,12 @@ import HookMemo from "./ch7/HookMemo";
 import HookTransition from "./ch7/HookTransition";
 import HookDefered from "./ch7/HookDeferred";
 import HookCustom from "./ch7/HookCustom";
+import {RouterProvider} from "react-router-dom";
+import routeBasic from "./ch8/routeBasic";
+import routesLink from "./ch8/routesLink";
+import routeParam from "./ch8/routeParam";
+import {HelmetProvider} from "react-helmet-async";
+import routesHandle from "./ch8/routesHandle";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -112,7 +118,11 @@ root.render(
     // <HookMemo/>
     // <HookTransition/>
     // <HookDefered/>
-    <HookCustom/>
+    // <HookCustom/>
+    // <RouterProvider router={routeParam}/>
+    <HelmetProvider>
+        <RouterProvider router={routesHandle} />
+    </HelmetProvider>
 );
 
 
