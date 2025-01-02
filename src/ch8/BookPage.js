@@ -27,6 +27,9 @@ import books from '../ch7/books';
 export default function BookPage() {
   // 경로 매개변수 가져오기
   const {isbn = '9791158395179'} = useParams();
+    if (!/^.{13}$/.test(isbn)) {
+        throw new RangeError('ISBN is invalid!');
+    }
   const {title, summary} = books.find(b => isbn === b.isbn);
 
   return (

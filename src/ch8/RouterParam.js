@@ -14,10 +14,14 @@ export default function RouterParam() {
                     시작하세요! C# 12 프로그래밍</NavLink></li>
                 <li><NavLink to="/book/9791158395186">
                     OpenAI API와 파이썬으로 나만의 챗GPT 만들기</NavLink></li>
+                <li><NavLink to="/book/foo">
+                    오류 페이지</NavLink></li>
                 <li><NavLink to={"/book"} end>기본 도서</NavLink></li>
                 <li><NavLink to={"/search/react/router/remix"}>검색 결과</NavLink></li>
                 <li><NavLink to={"/bookQuery?isbn=979-1-1583-9512-4"}>게임 개발을 위한 미드저니, 스테이블 디퓨전 완벽 활용법(쿼리버전)</NavLink>
                 </li>
+                <li><NavLink to={"/weather/Seoul"}>서울 날씨</NavLink></li>
+                <li><NavLink to={"/weather/test"}>알 수 없는 날씨</NavLink></li>
             </ul>
             <hr/>
             <Outlet context={[count, setCount]}/>
