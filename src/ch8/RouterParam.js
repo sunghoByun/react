@@ -4,7 +4,7 @@ import {useState} from "react";
 
 export default function RouterParam() {
     const [count, setCount] = useState(0);
-
+    const navigation = useNavigation();
     return (
         <>
             <p>접속자 수 : {count}</p>
@@ -22,9 +22,16 @@ export default function RouterParam() {
                 </li>
                 <li><NavLink to={"/weather/Seoul"}>서울 날씨</NavLink></li>
                 <li><NavLink to={"/weather/test"}>알 수 없는 날씨</NavLink></li>
+                <li><NavLink to={"/book/form"}>도서 등록 양식</NavLink></li>
+                <li><NavLink to={"/books"}>도서 목록</NavLink></li>
+
             </ul>
             <hr/>
-            <Outlet context={[count, setCount]}/>
+            {
+                navigation.state === 'loading' ?
+                    <p>Loading...</p> : <Outlet context={[count, setCount]}/>
+            }
+
         </>
     );
 }
